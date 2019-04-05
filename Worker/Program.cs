@@ -59,7 +59,7 @@ namespace Worker
 
             Console.WriteLine("Name: " + worker.Name);
             Console.WriteLine("Department: " + worker.Department.Name);
-            Console.WriteLine("Income for: " + dateIncome + ": " + worker.Income(year,month));
+            Console.WriteLine("Income for: " + dateIncome + ": " + worker.Income(year,month).ToString("F2", CultureInfo.InvariantCulture));
 
             Console.ReadLine();
 
